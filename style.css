@@ -147,6 +147,9 @@ body{
 .dados > p,button{
     margin-left: 20px;
 }
+.dados:nth-child(3){
+    margin-top: -480px;
+}
 /*----------------------------------------*/
 .p3{
     grid-area: p3;
