@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <metav http-equiv="refresh" content="1.5">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section class="home">
+        <div class="p1">
+            <div class="wrapper">
+                <img src="midias/black=car.jpg" alt="">
+            </div>
+            <div class="banner">
+                <h1>Deny sport cars</h1>
+                <p>Just do it</p>
+                <a href="https://deny-santos.github.io/site-deny/"><button class="fbt">Saiba mais</button></a>
+            </div>
+            <div class="seta" id="seta">
+                <img src="midias/seta-up.png" alt="">
+            </div>
+        </div>
+
+        <div class="p2">
+            <h1>Car´s new</h1>
+            <div class="pegtd">
+                <div class="card">
+                    <div class="pegaimg">
+                        <img src="midias/carro-futuro.jpg" alt="">
+                    </div>
+                    <div class="dados">
+                        <h3 class="suba">O que o futuro nos espera?</h3>
+                        <p class="suba">com tanto avanço na tecnologia, ja não se pode esperar nada, pois tudo é imprevisivel nessa area...</p>
+                        <button class="fbt suba2">Ler mais...</button>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="pegaimg">
+                        <img src="midias/de-volta-ao-futuro.jpg" alt="">
+                    </div>
+                    <div class="dados">
+                        <h3 class="suba">Eveluçâo automobilistica</h3>
+                        <p class="suba">No tinhamos carros mais fortes no quesito lataria, e até mesmo em potencia dos motores...</p>
+                        <button class="fbt suba2">Ler mais...</button>
+                    </div>
+                </div>
+    
+                <div class="card">
+                    <div class="pegaimg">
+                        <img src="midias/ford-mustang.jpg" alt="">
+                    </div>
+                    <div class="dados">
+                        <h3 class="suba">porque a ford saiu <br> do Brasil?</h3>
+                        <p class="suba">Recebemos a noticia que a empresa ford, encerraria as suas açoes  no Brasil...</p>
+                        <button class="fbt suba2">Ler mais...</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="p3"></div>
+        <div class="p4"></div>
+    </section>
+
+
+    <script src="js.js"></script>
+</body>
+</html>
