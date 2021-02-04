@@ -22,7 +22,7 @@ body{
 .wrapper{
     width: 100%;
     height: 100%;
-    opacity: 40%;
+    opacity: 80%;
 }
 .wrapper > img{
     width: 100%;
@@ -37,6 +37,7 @@ body{
     position: relative;
     top: -500px;
     font-family: 'Eater', cursive;
+    text-shadow: .3rem .4rem 2px rgba(240, 231, 231, 0.7);
 }
 
 .fbt{
@@ -88,7 +89,7 @@ body{
     height: 100vh;
     width: 100%;
     background: 
-    linear-gradient(rgb(51, 48, 48), rgb(218, 206, 206),  rgb(36, 34, 34));
+    linear-gradient(rgb(51, 48, 48), rgb(29, 3, 3), rgb(36, 34, 34));
     box-shadow: 45px 45px 45px 45px;
     display: grid;
     grid-template-rows: 17% 83%;
@@ -99,6 +100,7 @@ body{
     text-align: center;
     font-size: clamp(3em, 1.9em + 2.5vw, 4em);
     margin-top: -3px;
+    color: orangered;
 }
 
 .pegtd{
@@ -188,5 +190,14 @@ body{
     }
     .banner{
         top: -400px;
+    }
+    .dados:nth-child(1){
+        margin-top: -530px;
+    }
+    .dados:nth-child(2){
+        margin-top: -510px;
+    }
+    .dados:nth-child(3){
+        margin-top: -530px;
     }
 }
