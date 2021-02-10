@@ -1,15 +1,16 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Eater&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap');
 
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css");
+
 body{
     margin: 0;
     padding: 0;
+    width: 100%;
 }
 .home{
     display: grid;
-    grid-gap: .1px;
     grid-template-areas: "p1" "p2" "p3" "p4";
 }
 .p1{
@@ -17,17 +18,37 @@ body{
     height: 90vh;
     width: 100%;
     background-color: black;
-    box-shadow: 45px 45px 45px 45px;
 }
 .wrapper{
     width: 100%;
     height: 100%;
     opacity: 80%;
+    animation: op 4s;
+}
+@keyframes op{
+    0%{
+        opacity: 100%;
+    }
+    70%{
+        opacity: 100%;
+    }
+    100%{
+        opacity: 80%;
+    }
 }
 .wrapper > img{
     width: 100%;
     height: 100%;
     object-fit: cover;
+    animation: zoom 3s;
+}
+@keyframes zoom{
+    0%{
+        transform: scale(1.4);
+    }
+    100%{
+        transform: scale(1);
+    }
 }
 .banner{
     text-align: center;
@@ -37,9 +58,8 @@ body{
     position: relative;
     top: -500px;
     font-family: 'Eater', cursive;
-    text-shadow: .3rem .4rem 2px rgba(240, 231, 231, 0.7);
+    text-shadow: .3rem .4rem 2px rgb(135, 11, 129);
 }
-
 .fbt{
     height: 2.5rem;
     width: clamp(150px, 190px + 2vw, 250px);
@@ -49,8 +69,9 @@ body{
     border: none;
     font-family: 'Playfair Display SC', serif;
     font-size: 22px;
-    transition: 1s;
+    transition:  1s;
 }
+
 .fbt:hover{
     background-color: rgb(56, 53, 53);
     color: white;
@@ -90,7 +111,6 @@ body{
     width: 100%;
     background: 
     linear-gradient(rgb(51, 48, 48), rgb(29, 3, 3), rgb(36, 34, 34));
-    box-shadow: 45px 45px 45px 45px;
     display: grid;
     grid-template-rows: 17% 83%;
     
@@ -114,14 +134,13 @@ body{
 }
 .card{
     height: 100vh;
-    
 }
 .pegaimg{
     height: 100%;
     padding-bottom: -90px;
     
 }
-.pegaimg > img{
+.pegaimg > a > img{
     height: 70%;
     max-width: 100%;
     border-radius: 20px;
@@ -129,7 +148,7 @@ body{
     transition: .3s;
     align-self: flex-end;
 }
-.pegaimg:hover > img{
+.pegaimg:hover > a > img{
     height: 71%;
 }
 .dados{
@@ -149,20 +168,109 @@ body{
 }
 /*----------------------------------------*/
 .p3{
+    font-family: 'Playfair Display SC', serif;
+    color: white;
     grid-area: p3;
-    height: 100vh;
-    width: 100%;
-    background-color: blue;
-    box-shadow: 45px 45px 45px 45px;
+    height: 110vh;
+    max-width: 100%;
+    background: linear-gradient( to right, rgb(27, 207, 21),rgb(161, 66, 190), rgb(54, 51, 51));
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 15% 85%;
+    padding-bottom: 20px;
 }
-.p4{
-    grid-area: p4;
-    height: 100vh;
-    width: 100%;
-    background-color: rgb(51, 114, 114);
-    box-shadow: 45px 45px 45px 45px;
+.p3 > h1{
+    font-family: 'Playfair Display SC', serif;
+    text-align: center;
+    font-size: clamp(3em, 1.9em + 2.5vw, 4em);
+    margin-top: -10px;
+    color: orangered;
+}
+.p3 img{
+    max-width: 100%;
+    background-color: black;
+    animation: radio 4s infinite;
+}
+.divtotalp3{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0  auto;
+    max-width: 95%;
+    grid-gap: 30px;
+}
+.divtotalp3 >div{
+    max-width: 450px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.671);
+    box-shadow: 5px 5px 5px 5px rgb(63, 10, 61);
+    transition: 1s;
+    animation: radio 4s infinite;
+}
+.divtotalp3 >div:hover{
+    background-color: black;
+    opacity: 70%;
+}
+.divtotalp3 > div >img:hover{
+    max-width: 102%;
+}
+@keyframes radio{
+    0%{
+        border-radius: 0px;
+    }
+    50%{
+        border-radius: 20px;
+    }
+    100%{
+        border-radius: 0px
+    }
 }
 
+/*-------------------------------------------------------------*/
+.p4{
+    padding-top: 20px;
+    padding-bottom: 50px;
+    font-family: 'Playfair Display SC', serif;
+    font-size: 22px;
+    color: white;
+    grid-area: p4;
+    height: 40vh;
+    width: 100%;
+    background: linear-gradient(to right, rgb(16, 18, 46),rgb(15,13,100),rgb(23, 32, 41));
+    text-align: center;
+    border-bottom: 30px rgb(21, 21, 28);
+}
+i{
+    margin-left: 20px;
+    color: white;
+    font-size: 70px;
+}
+.roda{
+    transition: 1s;
+}
+.roda:hover{
+    color: rgb(208, 77, 201);
+}
+p.roda:hover{
+    font-size: 25px;
+}
+i.roda:hover{
+    box-shadow: 5px;
+}
+@media (max-width: 1200px){
+    .divtotalp3 > div{
+        height: 250px;
+    }    
+}
+@media (max-width:1100px){
+    .divtotalp3 > div{
+        height: 230px;
+    } 
+}
+@media(max-width: 1000px){
+    .divtotalp3 > div{
+        height: 210px;
+    } 
+}
 @media (max-width: 900px){
     .pegtd{
         grid-template-columns: 1fr 1fr;
@@ -171,6 +279,23 @@ body{
     .card:nth-child(3){
         display: none;
     }
+    .divtotalp3{
+        grid-template-columns: 1fr 1fr;
+    }
+    .divtotalp3 > div{
+        height: 280px;
+    }
+    .divtotalp3 > div{
+        height: 268px;
+    }
+    .p3{
+        height: 200vh;
+    }
+}
+@media(max-width: 800px){
+    .divtotalp3 > div{
+        height: 250px;
+    } 
 }
 @media (max-width: 600px){
     .pegtd{
@@ -200,4 +325,17 @@ body{
     .dados:nth-child(3){
         margin-top: -580px;
     }
+    .divtotalp3{
+        grid-template-columns: 1fr;
+        margin-top: -200px;
+    }
+    .p3{
+        height: 370vh;
+    }
+    .divtotalp3 > div{
+        background-color: rgba(0, 0, 0, 0.568);
+    }
+
+    
+
 }
